@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity" >
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ><RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/ImgaeV"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/studen_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImgaeV"
+            android:text="Student Attendance Manager"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>
